@@ -7,22 +7,22 @@ const Navbar = () => {
   return(
     <div className='flex justify-between items-center py-5 font-medium'>
     
-    <img src={assets.logo} alt='logo' className='w-36'/>
+    <Link to={'/'}><img src={assets.logo} alt='logo' className='w-36'/></Link>
     
     <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
-      <NavLink to='/' className='hover:border-b-2 hover:border-slate-400 flex flex-col otems-center gap-1'>
+      <NavLink to='/' className='hover:border-b-2 hover:border-slate-400 flex flex-col items-center gap-1'>
       <p>HOME</p>
       <hr className='w-full border-none h-[1.5px] bg-gray-700 hidden'/>
       </NavLink>
-      <NavLink to='/collection' className='hover:border-b-2 hover:border-slate-400 flex flex-col otems-center gap-1'>
+      <NavLink to='/collection' className='hover:border-b-2 hover:border-slate-400 flex flex-col items-center gap-1'>
       <p>COLLECTION</p>
       <hr className='w-full border-none h-[1.5px] bg-gray-700 hidden'/>
       </NavLink>
-      <NavLink to='/about' className='hover:border-b-2 hover:border-slate-400 flex flex-col otems-center gap-1 '>
+      <NavLink to='/about' className='hover:border-b-2 hover:border-slate-400 flex flex-col items-center gap-1 '>
       <p>ABOUT</p>
       <hr className='w-full border-none h-[1.5px] bg-gray-700 hidden'/>
       </NavLink>
-      <NavLink to='/contact' className='hover:border-b-2 hover:border-slate-400 flex flex-col otems-center gap-1'>
+      <NavLink to='/contact' className='hover:border-b-2 hover:border-slate-400 flex flex-col items-center gap-1'>
       <p>CONTACT</p>
       <hr className='w-full border-none h-[1.5px] bg-gray-700 hidden'/>
       </NavLink>
