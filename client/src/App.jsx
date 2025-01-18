@@ -10,11 +10,12 @@ import Orders from './pages/Orders'
 import PlaceOrder from './pages/PlaceOrder'
 import Collection from './pages/Collection'
 import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 
 
 
 function App() {
- 
+
 
   return (
     
@@ -31,6 +32,7 @@ function App() {
         <Route path='/place-order' element={<PlaceOrder />} />
         <Route path='/collection' element={<Collection />} />
       </Routes>
+      <Hero/>
 
     </div>
   )
