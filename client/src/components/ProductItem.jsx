@@ -1,9 +1,10 @@
 import React, {useContext} from 'react'
 import { ShopContext } from '../context/ShopContext'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 function ProductItem({id, image, name, price}) {
-  const {currency} = useContext(ShopContext)
+  const currency= useSelector((state) => state.product.currency)
 
   return (
     <Link className='text-gray-700 cursor-pointer' to={`/product/${id}`}>
